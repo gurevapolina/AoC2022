@@ -4,6 +4,8 @@ nznrnfrfntjfmvfwmzdfjlvtqnbhcprsg
 
 let inputString = input.split(separator: "\n", omittingEmptySubsequences: false).map({ String($0) }).first ?? ""
 
+// helpers
+
 func positionOfSymbol(_ string: String, keyLength: Int) -> Int {
     var string = string
     var count = 0
@@ -21,11 +23,11 @@ func positionOfSymbol(_ string: String, keyLength: Int) -> Int {
 }
 
 
-// part 1
+// part one
 
 print(positionOfSymbol(inputString, keyLength: 4))
 
-// part 2
+// part two
 
 print(positionOfSymbol(inputString, keyLength: 14))
 

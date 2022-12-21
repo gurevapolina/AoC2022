@@ -18,6 +18,8 @@ hmdt: 32
 
 let inputStrings = input.split(separator: "\n", omittingEmptySubsequences: false).map({ String($0) })
 
+// helpers
+
 enum Operation {
     case plus
     case minus
@@ -40,6 +42,8 @@ struct Expression {
     let operation: Operation
     let second: String
 }
+
+// part one
 
 var dict: [String: Expression] = [:]
 var result: [String: Int] = [:]

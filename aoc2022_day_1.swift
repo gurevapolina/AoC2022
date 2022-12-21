@@ -38,6 +38,6 @@ func sumOfTop(number: Int) -> Int {
 
 print(sumOfTop(number: 1))
 
-// part two
+// part two 
 
 print(sumOfTop(number: 3))
